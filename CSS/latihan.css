@@ -1,0 +1,423 @@
+* {
+margin: 0; padding: 0; box-sizing: border-box;
+}
+
+html{ scroll-behavior: smooth;
+}
+
+body { font-family: "Inter", sans-serif;
+background-color: #0f172a; color: #cbd5e1;
+line-height: 1.7;
+}
+
+h1, h2, h3, h4{ 
+font-family: "Poppins", sans-serif;
+color: #ffffff; 
+line-height: 1.2;
+}
+
+section:not(#home, #bukutamu){
+padding: 80px 0; 
+border-bottom: 1px solid #1e293b;
+}
+
+section h2{
+color: #06b6d4; 
+font-size: 2.2rem; 
+margin-bottom: 40px;
+text-align: center;
+}
+
+header{
+position: sticky;
+z-index: 999; 
+top:0;
+display: flex; 
+justify-content: space-between;
+align-items: center; 
+padding: 1rem 2rem;
+background: rgba(15, 23, 42, 0.95); 
+border-bottom: 2px solid #1e293b; 
+backdrop-filter: blur(10px);
+}
+
+header h1{ 
+font-size: 1.5rem; 
+color: #06b6d4;
+}
+
+nav ul {
+list-style: none;
+display: flex;
+gap: 20px; 
+align-items: center;
+}
+
+nav ul li a {
+text-decoration: none; 
+color: #ffffff;
+font-weight: 500;
+transition: 0.3s;
+}
+
+nav ul li a:hover {
+color: #38bdf8;
+}
+
+main { 
+max-width: 1200px;
+margin: auto;
+padding: 20px;
+}
+
+#home{ 
+text-align: center;
+background: linear-gradient(to bottom, #1e293b, #0f172a);
+padding: 120px 20px; 
+border-radius: 15px;
+}
+
+#home h2{ 
+font-size: 3.5rem;
+margin-bottom: 20px;
+}
+
+#home p{ 
+max-width: 700px;
+margin: 0 auto 30px; 
+font-size: 1.15rem;
+}
+
+#home a{ 
+display: inline-block;
+padding: 14px 32px; 
+text-decoration: none;
+background: #06b6d4;
+color: white;
+border-radius: 50px;
+font-weight: 600; 
+transition: 0.3s; 
+box-shadow: 0 0 15px rgba(6, 182, 212, 0.5);
+}
+
+#home a:hover { 
+background: #0891b2; 
+transform: translateY(-3px); 
+box-shadow: 0 10px 20px rgba(6, 182, 212, 0.4);
+}
+
+#about{
+padding: 100px 20px;
+}
+
+#about p{ 
+max-width: 1000px;
+margin: 0 auto 20px;
+text-align: justify;
+text-indent: 2em;
+}
+
+#profile { 
+padding: 100px 20px;
+}
+
+.profile-container { 
+max-width: 900px;
+margin: auto; 
+text-align: center;
+}
+
+.profile-photo{
+margin-bottom: 25px;
+}
+
+#profile img{ 
+width: 220px;
+height: 220px; 
+object-fit: cover; 
+border-radius: 50%; 
+border: 5px solid #38bdf8;
+box-shadow: 0 0 25px rgba(56, 189, 248, 0.4);
+}
+
+#profile h3{ 
+color: #38bdf8;
+margin: 20px 0;
+}
+
+#profile p{ 
+text-align: justify;
+text-indent: 2em; 
+margin-bottom: 15px;
+}
+
+#galery ul{ 
+list-style: none;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 25px;
+}
+
+.foto-card { 
+position: relative; 
+overflow: hidden;
+border-radius: 20px;
+background: #1e293b;
+transition: 0.4s;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.foto-card:hover { 
+transform: translateY(-10px); 
+box-shadow: 0 15px 30px rgba(56, 189, 248, 0.25);
+}
+
+.foto-card img {
+width: 100%;
+object-fit: cover; 
+height: 280px;
+transition: 0.5s;
+}
+
+.foto-card:hover img { 
+transform: scale(1.08);
+}
+
+.caption1 { 
+position: absolute;
+top: 15px;
+left: 15px;
+background: #38bdf8; 
+color: #0f172a;
+padding: 6px 15px; 
+border-radius: 20px; 
+font-size: 12px; 
+font-weight: 600;
+}
+
+.foto-card figcaption {
+padding: 20px;
+}
+
+.foto-card h4{ 
+color: #38bdf8; 
+margin-bottom: 10px;
+}
+
+#video { 
+padding: 100px 20px;
+}
+
+#video ul { 
+list-style: none; 
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+gap: 25px;
+}
+
+#video figure { 
+background: #1e293b;
+padding: 15px; 
+border-radius: 15px;
+transition: 0.3s;
+}
+
+#video figure:hover { 
+transform: translateY(-5px);
+}
+
+#video video {
+border-radius: 10px; 
+object-fit: cover; 
+width: 100%; 
+height: 250px;
+}
+
+#video figcaption {
+text-align: center; 
+margin-top: 10px;
+}
+
+#bukutamu{ 
+padding: 80px 20px; 
+background: #111827;
+}
+
+#bukutamu h2{
+text-align: center;
+margin-bottom: 30px;
+color: #06b6d4;
+}
+
+.guestbook { 
+max-width: 700px;
+margin: auto;
+padding: 30px;
+background: rgba(255, 255, 255, 0.9);
+border-radius: 25px;
+backdrop-filter: blur(10px); 
+box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.form-group{ 
+margin-bottom: 20px;
+}
+
+.form-group label {
+display: block;
+margin-bottom: 8px;
+color: #0f172a;
+font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+width:100%;
+padding: 14px; 
+border: 1px solid #d1d5db;
+border-radius: 12px; 
+font-size: 15px;
+font-family: "Poppins", sans-serif;
+transition: 0.3s;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+outline: none;
+border-color: #06b6d4;
+box-shadow: 0 0 10px rgba(6, 182, 212, 0.25);
+}
+
+button { 
+width: 100%;
+border: none;
+padding: 15px; 
+border-radius: 12px;
+background:#087889;
+color: white;
+font-size: 16px; 
+font-weight: 600;
+cursor: pointer; 
+transition: 0.3s;
+}
+
+button:hover{ 
+transform: translateY(-2px); 
+background: #0b5b76;
+}
+
+footer{
+text-align: center;
+padding: 40px 20px;
+background: #0f172a; 
+border-top: 1px solid #1e293b;
+}
+
+footer p{ 
+margin-bottom: 10px;
+}
+
+footer a { 
+color:#06b6d4; 
+text-decoration: none; 
+margin: 0 10px;
+transition: 0.3s;
+}
+
+footer a:hover {
+color: #38bdf8;
+}
+
+#home, #about, #profile, #galery, #video, #bukutamu{ 
+animation: fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp{ 
+from{ 
+opacity: 0; 
+transform: translateY(25px);
+}
+to{
+opacity: 1; 
+transform: translateY(0);
+}
+}
+
+@media (max-width: 992px) {
+header{ 
+flex-direction: column;
+gap: 15px;
+}
+nav ul { 
+justify-content:center; 
+flex-wrap: wrap;
+}
+#home h2{ 
+font-size: 2.7rem;
+}
+section h2{ 
+font-size: 1.8rem;
+}
+}
+
+@media (max-width: 768px) {
+header{
+padding: 15px;
+}
+nav ul {
+gap: 12px;
+}
+#home{ 
+padding: 90px 15px;
+}
+#home h2{ 
+font-size: 2rem;
+}
+#home p{
+font-size: 1rem;
+}
+section h2{ 
+font-size: 1.6rem;
+}
+#profile img {
+width: 180px;
+height: 180px;
+}
+#galery ul, #video ul{
+grid-template-columns: 1fr;
+}
+.guestbook {
+padding: 20px;
+}
+}
+
+@media (max-width: 480px) { 
+header h1{ 
+font-size: 1.2rem;
+}
+nav ul { 
+flex-direction: column;
+gap: 10px;
+}
+nav ul a { 
+font-size: 13px;
+}
+#home h2{
+font-size: 1.6rem;
+}
+#profile img { 
+height: 150px; 
+width: 150px;
+}
+.foto-card img {
+height: 220px;
+}
+.guestbook {
+padding: 15px;
+}
+.form-group input,
+.form-group textarea {
+padding: 12px;
+font-size: 14px;
+}
+}
